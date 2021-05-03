@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "run-p webpack:watch cordova:serve",
+    "add:browser": "cordova platform add browser",
     "webpack:watch": "webpack --mode=development",
     "cordova:serve": "phonegap serve",
     "build:react": "webpack --mode=production",
+    "add:ios": "cordova platform add ios",
+    "run:ios": "cordova run ios",
+    "build:ios": "cordova run ios",
+    "add:android": "cordova platform add android",
     "run:android": "cordova run android",
     "build:android:debug": "cordova build android",
     "build:android:release": "cordova build android --release -- --keystore=./{keysotrename}.keystore --storePassword={keystorePassword}  --alias={key alias name} --password={key password}"
